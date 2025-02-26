@@ -64,7 +64,8 @@
           Have questions or need assistance? Reach out to us, and we'll be happy
           to help!
         </p>
-        <form action="#" method="POST">
+
+        <form id="contact-form" novalidate>
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
@@ -80,14 +81,26 @@
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
 
-          <button type="submit" class="submit-btn">Send Message</button>
+          <button type="button" id="submit-btn" class="submit-btn">
+            Send Message
+          </button>
         </form>
       </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2025 The Carry Nest. All Rights Reserved.</p>
+      <p>© 2025 The Carry Nest | All Rights Reserved.</p>
+      <div class="subscribe">
+        <input
+          type="email"
+          id="subscribe-email"
+          placeholder="Enter your email"
+        />
+        <button id="subscribe-btn">Subscribe</button>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
