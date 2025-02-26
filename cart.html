@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | The Carry Nest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">The Carry Nest</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">Contact</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <h1>Your Shopping Cart</h1>
+      <p>Review your selected items before checkout</p>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+      <div class="container">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="cart-item">
+                  <img src="images/black-tote.jpg" alt="Elegant Leather Tote" />
+                  <span>Elegant Leather Tote</span>
+                </div>
+              </td>
+              <td>$129.99</td>
+              <td>
+                <input type="number" value="1" min="1" class="quantity-input" />
+              </td>
+              <td>$129.99</td>
+              <td>
+                <button class="remove-btn">X</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-item">
+                  <img src="images/green-bag.jpg" alt="Chic Crossbody Bag" />
+                  <span>Chic Crossbody Bag</span>
+                </div>
+              </td>
+              <td>$89.99</td>
+              <td>
+                <input type="number" value="1" min="1" class="quantity-input" />
+              </td>
+              <td>$89.99</td>
+              <td>
+                <button class="remove-btn">X</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h3>Cart Summary</h3>
+          <p>Subtotal: <span>$219.98</span></p>
+          <p>Shipping: <span>Free</span></p>
+          <h4>Total: <span>$219.98</span></h4>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 The Carry Nest | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

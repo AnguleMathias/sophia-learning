@@ -3,54 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Carry Nest - About Us</title>
+    <title>About Us - The Carry Nest</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <img src="logo.png" alt="The Carry Nest Logo" />
-      <h1>About The Carry Nest</h1>
+      <div class="logo">The Carry Nest</div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="checkout.html">Checkout</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart</a>
       </nav>
     </header>
 
-    <main>
-      <section class="company-info">
-        <h2>Who We Are</h2>
+    <!-- Hero Section -->
+    <section class="hero about-hero">
+      <div class="hero-content">
+        <h1>About The Carry Nest</h1>
+        <p>Crafting Timeless Elegance, One Handbag at a Time</p>
+      </div>
+    </section>
+
+    <!-- About Us Content -->
+    <section class="about">
+      <div class="container">
+        <h2>Our Story</h2>
         <p>
-          We specialize in luxury handbags crafted with precision and passion.
+          At The Carry Nest, we believe in elegance, quality, and timeless
+          designs. Our journey began with a passion for creating handbags that
+          exude sophistication while being functional for everyday use. Each of
+          our pieces is crafted with precision, using the finest materials to
+          ensure durability and style.
         </p>
-      </section>
 
-      <section class="business-hours">
-        <h2>Business Hours</h2>
-        <p>Monday - Friday: 9 AM - 7 PM</p>
-        <p>Saturday: 10 AM - 5 PM</p>
-      </section>
+        <h2>Our Mission</h2>
+        <p>
+          We strive to redefine luxury by offering handbags that balance
+          aesthetics with practicality. Whether you're looking for a statement
+          piece or an everyday essential, The Carry Nest brings you meticulously
+          designed handbags that cater to all your fashion needs.
+        </p>
 
-      <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" required />
+        <h2>Why Choose Us?</h2>
+        <ul>
+          <li>Premium handcrafted handbags</li>
+          <li>Exquisite designs for every occasion</li>
+          <li>Superior craftsmanship with top-quality materials</li>
+          <li>Unparalleled customer service</li>
+        </ul>
+      </div>
+    </section>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" required />
+    <!-- Contact Form -->
+    <section class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Have questions or need assistance? Reach out to us, and we'll be happy
+          to help!
+        </p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-          <label for="message">Message:</label>
-          <textarea id="message" required></textarea>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-          <button type="submit">Send Message</button>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
         </form>
-      </section>
-    </main>
+      </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2025 The Carry Nest. All Rights Reserved.</p>
     </footer>
